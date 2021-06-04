@@ -1,5 +1,7 @@
+// import React useState hook
 import { useState } from 'react'
 
+// define constant variable called AddTodo, uses onAdd prop (similar to onClick) via destructuring
 const AddTodo = ({ onAdd }) => { 
     const [item, setItem] = useState('')
 

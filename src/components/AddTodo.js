@@ -1,11 +1,9 @@
-// import React useState hook
-import { useState } from 'react'
 
-// define constant variable called AddTodo, uses onAdd prop (similar to onClick) via destructuring
-const AddTodo = ({ onAdd }) => { 
-    const [item, setItem] = useState('')
+import { useState } from 'react' // import React useState hook
 
-    const onSubmit = (e) => {
+const AddTodo = ({ onAdd }) => { // define constant variable called AddTodo, uses onAdd event handler as prop (similar to onClick) via destructuring
+    const [item, setItem] = useState('')//    item value entered by user, empty string default value of new ToDo 
+    const onSubmit = (e) => { // new handler function, e is event, preventDefault asks page not to refresh
         e.preventDefault()
         onAdd({item})
 

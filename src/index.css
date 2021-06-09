@@ -1,3 +1,4 @@
+/* create style rule for body tag, set margin, fonts, and uses font smoothing which may increase readability */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,6 +13,7 @@ code {
     monospace;
 }
 
+/* create id for root, set display property and spacing between elements */
 #root{
   display: flex;
   justify-content: space-around;

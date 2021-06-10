@@ -1,8 +1,11 @@
+// import Todo from Todo.js file in components
 import Todo from './Todo'
 
+// uses destructuring to extract todos from state, instead of (props) and (props.todos)
 const List = ({ todos }) => {
     return (
         <div>
+//         loop through/map todos and create individual components for each
           {todos.map((todo) => 
             <Todo key={todo.id} todo={todo} />
           )}  
@@ -10,5 +13,6 @@ const List = ({ todos }) => {
     )
 }
 
+// export List for use in App.js
 export default List
 

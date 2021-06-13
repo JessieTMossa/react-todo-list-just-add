@@ -5,7 +5,7 @@ import Todo from './Todo'
 const List = ({ todos }) => {
     return (
         <div>
-//         loop through/map todos and create individual components for each
+// loop through/map todos and create individual Todo components containing id number and todo item text
           {todos.map((todo) => 
             <Todo key={todo.id} todo={todo} />
           )}  
